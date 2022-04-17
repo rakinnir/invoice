@@ -25,25 +25,25 @@ btn1.addEventListener("click", function washCar() {
   firstService.textContent = "Wash Car"
   removeWashCar.textContent = "remove"
   priceOfWashCar.textContent = "10$"
-  btn1.removeEventListener("click", washCar)
   amount = amount + 10
   totalAmount.textContent = `${amount} $`
+  btn1.removeEventListener("click", washCar)
 })
 btn2.addEventListener("click", function mowLawn() {
   secondService.textContent = "Mow Lawn"
   removeMowLawn.textContent = "remove"
   priceOfMowLawn.textContent = "20$"
-  btn2.removeEventListener("click", mowLawn)
   amount = amount + 20
   totalAmount.textContent = `${amount} $`
+  btn2.removeEventListener("click", mowLawn)
 })
 btn3.addEventListener("click", function pullWeeds() {
   thirdService.textContent = "Pull Weeds"
   removepullweed.textContent = "remove"
   priceOfPullWeeds.textContent = "30$"
-  btn3.removeEventListener("click", pullWeeds)
   amount = amount + 30
   totalAmount.textContent = `${amount} $`
+  btn3.removeEventListener("click", pullWeeds)
 })
 
 // removing items from carts
@@ -70,9 +70,12 @@ removepullweed.addEventListener("click", function () {
 })
 
 // calling invoice
-invoice.addEventListener("click", function () {
+invoice.addEventListener("click", function (invoices) {
   services.textContent = ""
   prices.textContent = ""
   totalAmount.textContent = ""
   alert("We have got your invoices")
+  ;[btn1, btn2, btn3].forEach(function (removeAll) {
+    removeAll.remove()
+  })
 })
