@@ -1,0 +1,111 @@
+body {
+  background: #1f2937;
+  font-family: "Inter", sans-serif !important;
+  font-style: normal;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* main container  */
+#container {
+  border: 2px solid;
+  margin: 0 auto;
+  width: 550px;
+  height: 719px;
+  border-radius: 20px;
+  color: white;
+}
+
+/* header & message  */
+.header {
+  border-radius: 20px 20px 0 0;
+  background: #3a69d2;
+  padding-top: 20px;
+  /* using padding with same value of border radius solved overflow issue  */
+  height: 190px;
+  margin-bottom: 40px;
+}
+h1 {
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 40px;
+}
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* buttons  */
+#btn1,
+#btn2,
+#btn3 {
+  width: 142.11px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 10px 25px 10px;
+  color: #4a4e74;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+hr {
+  width: 480px;
+}
+
+/* cartsection with footer line  */
+.cart-section {
+  margin: 20px 40px 90px 40px;
+}
+#services,
+.notes {
+  float: left;
+  text-align: left;
+}
+#prices,
+.total {
+  float: right;
+  text-align: right;
+}
+.footer {
+  margin: 20px 40px 20px 40px;
+}
+
+/* total cost and invoice */
+#total-amount {
+  margin: 20px 0 50px 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 32px;
+  float: right;
+  text-align: right;
+}
+#invoice {
+  width: 473px;
+  height: 44px;
+  background: #3a69d2;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  color: white;
+}
+
+/* remove button design  */
+#remove-washcar,
+#remove-mowlawn,
+#remove-pullweeds {
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+/* card display  */
+#first-service,
+#second-service,
+#third-service {
+  display: inline-block;
+  margin: 0 0 15px 0;
+}

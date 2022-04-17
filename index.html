@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Invoice</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div id="container">
+      <!-- header and message  -->
+      <div class="header">
+        <h1>Invoice creator</h1>
+        <p class="message">Thanks for choosing Goodcrop,LLC!</p>
+      </div>
+      <!-- buttons -->
+      <button id="btn1">Wash Car:10$</button>
+      <button id="btn2">Mow Lawn:20$</button>
+      <button id="btn3">Pull weeds:30$</button>
+      <!-- cart section -->
+      <section class="cart-section">
+        <div id="services">
+          <p>Services</p>
+          <p id="first-service">&nbsp</p>
+          <span id="remove-washcar"></span>
+          <br />
+          <p id="second-service">&nbsp</p>
+          <span id="remove-mowlawn"></span>
+          <br />
+          <p id="third-service">&nbsp</p>
+          <span id="remove-pullweeds"></span>
+        </div>
+        <div id="prices">
+          <p>Prices</p>
+          <p id="price-of-washcar">&nbsp</p>
+          <p id="price-of-mowlawn">&nbsp</p>
+          <p id="price-of-pullweeds">&nbsp</p>
+        </div>
+      </section>
+      <!-- footer section  -->
+      <hr />
+      <p class="footer">
+        <span class="notes">Notes</span> <span class="total">Total Amount</span>
+        <br />
+        <span id="total-amount"></span>
+      </p>
+      <br />
+      <button id="invoice">Send Invoice</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
